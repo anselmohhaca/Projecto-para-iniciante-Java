@@ -2,8 +2,7 @@ package projectossimples;
 
 public class Operacoes {
 	
-	private  double val1;
-	private double val2;
+ 
 	
 	
 	public double soma(double val1,double val2) {
@@ -19,13 +18,14 @@ public class Operacoes {
 		return val1*val2;
 	}
 	
-	public void  divisao(double val1,double val2) {
-		if (val2!=0) {
-			System.out.println(val1/val2);
-		}else {
-			System.out.println("Erro");
-		}
+	public double divisao(double val1,double val2) {
+	 	if(val2!=0) {
+	 		return val1/val2;
+	 	}else {
+	 		return Double.NaN;
+	 	}
+		
 		
 	}
 
-}
+} 
