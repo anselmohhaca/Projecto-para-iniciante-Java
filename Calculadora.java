@@ -1,43 +1,31 @@
 package projectossimples;
 
-import java.util.Scanner;
-public class Calculadora {
-
-	public static void main(String[] args) {
+public class Operacoes {
+	
+ 
+	
+	
+	public double soma(double val1,double val2) {
+		return val1+val2;
 		
-		Operacoes op=new Operacoes();
+	}
+	
+	public double subtracao(double val1,double val2) {
+		return val1-val2;
+	}
+	
+	public double multiplicao(double val1,double val2) {
+		return val1*val2;
+	}
+	
+	public double divisao(double val1,double val2) {
+	 	if(val2!=0) {
+	 		return val1/val2;
+	 	}else {
+	 		return Double.NaN;
+	 	}
 		
-		Scanner ler=new Scanner(System.in);
 		
-		System.out.println("Insirir  primeiro valor");
-		double a=ler.nextDouble();
-		
-		System.out.println("Insirir  segundo valor");
-		double b=ler.nextDouble();
-		
-		System.out.println("1-Soma");
-		System.out.println("1-Subtracao");
-		System.out.println("Multiplicacao");
-		System.out.println("DIvisao");
-		
-		System.out.println("Insira o tipo de operacao ");
-		int escolha =ler.nextInt();
-		
-		switch (escolha) {
-		
-		case 1: op.soma(a, b);
-				break;
-		case 2: op.subtracao(a, b);
-				break;
-		case 3: op.multiplicao(a, b);
-				break;
-		case 4: op.divisao(a, b);
-		        break;
-		 default :System.out.println("Operacao invalida");
-		 break;
-
-		}
-
 	}
 
 }
